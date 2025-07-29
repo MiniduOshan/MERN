@@ -1,4 +1,4 @@
-# 📚 Resourcia – Resources Management System
+# Resources Management System
 
 A lightweight and organised Resources Management System built using **TypeScript**. Ideal for students, developers, or teams to manage and share categorised resources like documents, links, tools, and templates.
 
