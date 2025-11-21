@@ -4,9 +4,14 @@ import './index.css'
 import App from './App.jsx'
 import React from 'react'
 import { BrowserRouter } from 'react-router-dom'
+import { AuthProvider } from './hooks/useAuth'  // <-- add this import
 
 createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>,
+  <StrictMode>
+    <BrowserRouter>
+      <AuthProvider>       {/* <-- wrap your whole app */}
+        <App />
+      </AuthProvider>
+    </BrowserRouter>
+  </StrictMode>
 )
